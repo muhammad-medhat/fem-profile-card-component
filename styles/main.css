@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", Sans-Serif;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: 489% 282%, -380% -128%;
+  background-repeat: no-repeat;
+}
+.container .card {
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  overflow: hidden;
+}
+.container .card .top {
+  min-height: 20vh;
+  min-width: 100%;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+}
+.container .card .top .figure {
+  margin-bottom: -10rem;
+}
+.container .card .top .figure .caption {
+  font-weight: 700;
+}
+.container .card .top .figure .caption .s {
+  color: hsl(185, 75%, 39%);
+  font-weight: 400;
+  font-size: medium;
+  margin: 1rem 0;
+}
+.container .card .top .figure .caption span {
+  color: hsl(185, 75%, 39%);
+  font-weight: 400;
+  margin: 0 1rem;
+}
+.container .card .top .figure img {
+  border-radius: 50%;
+  border: solid 3px #fff;
+}
+.container .card .spacer {
+  min-height: 20vh;
+  min-width: 100%;
+}
+.container .card hr {
+  min-width: 100%;
+  margin-bottom: 1rem;
+}
+.container ul {
+  list-style-type: none;
+}
+.container ul li {
+  margin: 0 1rem;
+}
+.container .item {
+  max-width: 100px;
+}
+.container .item .stat-val {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.container .item .stat-title {
+  color: hsl(185, 75%, 39%);
+  font-weight: 400;
+  font-size: medium;
+  margin: 1rem 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+/*********************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+
+// colors
+$DarkCyan: hsl(185, 75%, 39%)
+$VerDarkDesaturatedBlue: hsl(229, 23%, 23%)
+$DarGrayishBlue: hsl(227, 10%, 46%)
+$DarkGray: hsl(0, 0%, 59%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: "Kumbh Sans", Sans-Serif
+    font-size: 18px
+img
+    max-width: 100%
+
+.container
+
+    min-height: 100vh
+    background-color: $DarkCyan
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg")
+    background-position: 489% 282%, -380% -128%
+    background-repeat: no-repeat
+    .card
+        border-radius: 15px
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3)
+        background: #fff
+        overflow: hidden
+        // min-height: 40vh
+        // min-width: 60vh
+        // justify-content: flex-start
+
+        .top
+            min-height: 20vh
+            min-width: 100%
+            background-image: url("../images/bg-pattern-card.svg")
+            background-size: cover
+
+            .figure
+                margin-bottom: -10rem
+
+                .caption
+                    font-weight: 700
+                    .s
+                        color: $DarkCyan
+                        font-weight: 400
+                        font-size: medium
+                        margin: 1rem 0
+                    span
+                        color: $DarkCyan
+                        font-weight: 400
+                        margin: 0 1rem
+                img
+                    border-radius: 50%
+                    border: solid 3px #fff
+
+        .spacer
+            min-height: 20vh
+            min-width: 100%
+        hr
+            min-width: 100%
+            margin-bottom: 1rem
+    ul
+        list-style-type: none
+        li
+            margin: 0 1rem
+    .item
+        max-width: 100px
+
+        .stat-val
+            font-weight: 700
+            color: $VerDarkDesaturatedBlue
+        .stat-title
+            color: $DarkCyan
+            font-weight: 400
+            font-size: medium
+            margin: 1rem 0
+
+//-----------------------------------------
+.d-flex
+    display: flex
+.justify-center
+    justify-content: center
+.justify-space-between
+    justify-content: space-between
+.align-center
+    align-items: center
+.flex-dir-col
+    flex-direction: column
+/*********************/
+.attribution
+    font-size: 11px
+    text-align: center
+
+.attribution a
+    color: hsl(228, 45%, 44%)
