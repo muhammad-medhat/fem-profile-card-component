@@ -19,7 +19,9 @@
 
 <body>
   <div class="container d-flex justify-center align-center">
-    <div class="card d-flex flex-dir-col justify-center align-center">
+    <div class="inner"></div>
+    <div class="log"></div>
+    <div class="card d-flex flex-dir-col justify-start align-center">
       <div class="top d-flex flex-dir-col justify-center align-center">
         <div class="figure d-flex flex-dir-col justify-center align-center">
           <img src="images/image-victor.jpg" alt="Victor Crest">
@@ -62,6 +64,19 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script>
+    let inner = document.querySelector(".inner");
+    let log = document.querySelector(".log");
+
+    function setCoords(e, type) {
+      const idX = `${type}X`;
+      const idY = `${type}Y`;
+
+      document.getElementById(idX).innerText = e[idX];
+      document.getElementById(idY).innerText = e[idY];
+
+    }
+  </script>
 </body>
 
 </html>

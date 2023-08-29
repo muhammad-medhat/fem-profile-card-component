@@ -22,22 +22,21 @@ img
     min-height: 100vh
     background-color: $DarkCyan
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg")
-    background-position: 489% 282%, -380% -128%
+    background-position: -50% 220%, 140% -160%
     background-repeat: no-repeat
     .card
         border-radius: 15px
         box-shadow: 2px 2px 5px rgba(0,0,0,0.3)
         background: #fff
         overflow: hidden
-        // min-height: 40vh
-        // min-width: 60vh
-        // justify-content: flex-start
+        min-height: 40vh
+        min-width: 60vh
 
         .top
             min-height: 20vh
             min-width: 100%
             background-image: url("../images/bg-pattern-card.svg")
-            background-size: cover
+            background-size: contain
 
             .figure
                 margin-bottom: -10rem
@@ -65,6 +64,7 @@ img
             margin-bottom: 1rem
     ul
         list-style-type: none
+        // margin: 5rem
         li
             margin: 0 1rem
     .item
@@ -82,6 +82,8 @@ img
 //-----------------------------------------
 .d-flex
     display: flex
+.justify-start
+    justify-content: flex-start
 .justify-center
     justify-content: center
 .justify-space-between
@@ -97,3 +99,6 @@ img
 
 .attribution a
     color: hsl(228, 45%, 44%)
+@media (min-width:1600px)
+    .container
+        background-position: -50% 113%, 128% -35%
